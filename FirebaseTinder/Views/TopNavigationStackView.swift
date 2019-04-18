@@ -9,9 +9,6 @@
 import UIKit
 
 
-
-
-
 class TopNavigationStackView: UIStackView {
 
     override init(frame: CGRect) {
@@ -21,14 +18,7 @@ class TopNavigationStackView: UIStackView {
         button.setImage(img.withRenderingMode(.alwaysOriginal), for: .normal)
         return button
         
-        
-        
-
-        
-        
-        
-        
-        
+    
         }
         buttons.forEach { (v) in
             addArrangedSubview(v)
