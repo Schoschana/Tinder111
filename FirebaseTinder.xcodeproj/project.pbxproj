@@ -12,9 +12,9 @@
 		2258F48F2260CBB50098CADA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2258F48D2260CBB50098CADA /* Main.storyboard */; };
 		2258F4912260CBB70098CADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2258F4902260CBB70098CADA /* Assets.xcassets */; };
 		2258F4942260CBB70098CADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2258F4922260CBB70098CADA /* LaunchScreen.storyboard */; };
-		2258F49D2260D81B0098CADA /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258F49C2260D81B0098CADA /* Extensions+UIView.swift */; };
 		2258F4A02260E2B30098CADA /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258F49F2260E2B30098CADA /* HomeBottomControlsStackView.swift */; };
 		2258F4A22260ED9A0098CADA /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258F4A12260ED9A0098CADA /* TopNavigationStackView.swift */; };
+		22D9D7152268F06500F5826B /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D9D7142268F06500F5826B /* Extensions+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		2258F4902260CBB70098CADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2258F4932260CBB70098CADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2258F4952260CBB70098CADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2258F49C2260D81B0098CADA /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extensions+UIView.swift"; path = "../../../code/4 Firestore Registration Login/Materials/SwipeMatchFirestoreLBTA/SwipeMatchFirestoreLBTA/Extensions/Extensions+UIView.swift"; sourceTree = "<group>"; };
 		2258F49F2260E2B30098CADA /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
 		2258F4A12260ED9A0098CADA /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
+		22D9D7142268F06500F5826B /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				2258F49E2260E2590098CADA /* Views */,
-				2258F49B2260D7F00098CADA /* Extensions */,
 				2258F4892260CBB50098CADA /* AppDelegate.swift */,
 				2258F48B2260CBB50098CADA /* ViewController.swift */,
 				2258F48D2260CBB50098CADA /* Main.storyboard */,
@@ -72,21 +71,22 @@
 			path = FirebaseTinder;
 			sourceTree = "<group>";
 		};
-		2258F49B2260D7F00098CADA /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				2258F49C2260D81B0098CADA /* Extensions+UIView.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		2258F49E2260E2590098CADA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				22D9D7162268F07E00F5826B /* ext */,
 				2258F49F2260E2B30098CADA /* HomeBottomControlsStackView.swift */,
 				2258F4A12260ED9A0098CADA /* TopNavigationStackView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		22D9D7162268F07E00F5826B /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				22D9D7142268F06500F5826B /* Extensions+UIView.swift */,
+			);
+			path = ext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,8 +163,8 @@
 				2258F48C2260CBB50098CADA /* ViewController.swift in Sources */,
 				2258F4A02260E2B30098CADA /* HomeBottomControlsStackView.swift in Sources */,
 				2258F48A2260CBB50098CADA /* AppDelegate.swift in Sources */,
-				2258F49D2260D81B0098CADA /* Extensions+UIView.swift in Sources */,
 				2258F4A22260ED9A0098CADA /* TopNavigationStackView.swift in Sources */,
+				22D9D7152268F06500F5826B /* Extensions+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
